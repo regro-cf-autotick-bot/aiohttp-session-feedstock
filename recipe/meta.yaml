@@ -1,5 +1,5 @@
 {% set name = "aiohttp-session" %}
-{% set version = "2.7.0" %}
+{% set version = "2.8.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18ae740845214086f783574edfee1bac36862332bd11d561e048b079d8f6ad34
+  sha256: 4975ad108341520a7107f5e4d482c6a9f2bbc367b9c9b08e7df524d353f5f0cb
 
 build:
   number: 0
