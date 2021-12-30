@@ -1,18 +1,18 @@
 {% set name = "aiohttp-session" %}
-{% set version = "2.7.0" %}
+{% set version = "2.10.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 18ae740845214086f783574edfee1bac36862332bd11d561e048b079d8f6ad34
+  sha256: 2af19af9f435937baacbb6420f887b21e5021bb34be146c2702c58e6ebf6b76b
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
